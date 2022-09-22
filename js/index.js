@@ -1,14 +1,12 @@
 const menuButton = document.querySelector('.hamburger');
 const menuItems = document.querySelector('.nav-items');
 const items = document.querySelectorAll('.nav-item');
-const head = document.querySelector('.heading-container');
 const main = document.querySelector('main');
 
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('active');
   menuItems.classList.toggle('show-menu');
-  head.classList.toggle('move-down');
-});
+})
 
 items.forEach((item) => {
   item.addEventListener('click', () => {
@@ -21,6 +19,14 @@ items.forEach((item) => {
 main.addEventListener('click', () => {
   menuItems.classList.remove('show-menu');
   menuButton.classList.remove('active');
+});
+
+const doctInfo = document.querySelectorAll('.doct');
+const seeMoreButton = document.querySelector('.see-more-button');
+seeMoreButton.addEventListener('click', () => {
+  doctInfo.forEach((info) => {
+    info.classList.toggle('hide-info');
+  });
 });
 
 const doctorInfo = [

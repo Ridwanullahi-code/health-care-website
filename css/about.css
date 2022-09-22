@@ -34,6 +34,9 @@ header {
   margin-right: 100px;
   color: white;
 }
+.first-header-content a{
+  color: white;
+}
 
 .nav-container {
   position: absolute;
@@ -227,7 +230,7 @@ header {
 footer {
   width: 100vw;
   background-color: #272a31;
-  padding-top: 20px;
+  padding: 40px 0;
   gap: 15px;
 }
 
@@ -247,8 +250,9 @@ footer {
 }
 
 .page-links a {
-  color: #d3d3d3c2;
-  font-size: 13px;
+  color: #d3d3d3d0;
+  font-size: 16px;
+  line-height:30px;
 }
 
 .form-container {
@@ -266,7 +270,11 @@ footer {
   font-size: 0.7em;
   color: rgba(255, 255, 255, 0.737);
 }
-
+.user-input{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .form-container input {
   width: 50vw;
   height: 5.3vh;
@@ -280,9 +288,8 @@ footer {
 }
 
 .send-email-button {
-  margin-left: -10px;
   font-weight: bolder;
-  padding: 0.35em 9px;
+  padding: 0.35em 5px;
   border: 1px solid #ec5242;
   background: #ec5242;
   color: white;
@@ -455,7 +462,6 @@ footer {
   .page-links h5 {
     border: none;
   }
-
   .form-container {
     width: 30vw;
     display: flex;
