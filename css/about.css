@@ -137,7 +137,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/main_big.png');
+  background-image: url('/images/main_big.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -197,7 +197,7 @@ header {
 }
 
 .img1 {
-  background-image: url('../images/doctor-banner.jpg');
+  background-image: url('/images/doctor-banner.jpg');
 }
 
 .ps-img {
@@ -224,7 +224,7 @@ header {
 }
 
 .img2 {
-  background-image: url('../images/depositphotos_75101721-stock-photo-group-of-doctors-team.jpg');
+  background-image: url('/images/depositphotos_75101721-stock-photo-group-of-doctors-team.jpg');
 }
 
 footer {

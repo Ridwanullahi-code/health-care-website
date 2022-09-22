@@ -130,7 +130,7 @@ header {
 .heading-section {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/main_big.png');
+  background-image: url('/images/main_big.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -182,7 +182,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background: url('../images/icon/pattern_bg.png');
+  background: url('/images/icon/pattern_bg.png');
   background-color: #272a31;
 }
 
