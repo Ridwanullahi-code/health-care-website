@@ -130,7 +130,7 @@ header {
 .heading-section {
   width: 100vw;
   height: 100vh;
-  background-image: url('/images/main_big.png');
+  background-image: url('../images/main_big.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -182,7 +182,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background: url('/images/icon/pattern_bg.png');
+  background: url('../images/icon/pattern_bg.png');
   background-color: #272a31;
 }
 
@@ -285,29 +285,6 @@ header {
 
 .doctor-section .summary1 {
   color: #ec5242;
-}
-
-.see-more-button {
-  display: flex;
-  width: 90vw;
-  font-weight: 600;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 0;
-  border: 1px solid grey;
-  border-radius: 5px;
-  margin: 20px auto;
-  cursor: pointer;
-}
-
-.see-more-button:hover {
-  color: white;
-  border-color: #ec5242;
-  background-color: #ec5242;
-}
-
-.see-more-button:active {
-  background-color: #821307;
 }
 
 footer {
@@ -555,10 +532,6 @@ footer {
 
   .doctor-section .summary1 {
     color: #ec5242;
-  }
-
-  .see-more-button {
-    display: none;
   }
 
   .inner-container {

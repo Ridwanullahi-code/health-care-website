@@ -21,19 +21,11 @@ main.addEventListener('click', () => {
   menuButton.classList.remove('active');
 });
 
-const doctInfo = document.querySelectorAll('.doct');
-const seeMoreButton = document.querySelector('.see-more-button');
-seeMoreButton.addEventListener('click', () => {
-  doctInfo.forEach((info) => {
-    info.classList.toggle('hide-info');
-  });
-});
-
 const doctorInfo = [
   {
     name: 'Dr Promise Okonkwo',
     prof: 'AUDIOLOGIST',
-    image: '/images/gallery/Promise-Okonkwo-b.png',
+    image: 'images/gallery/Promise-Okonkwo-b.png',
     summary1: 'a Clinical Audiologist at Evercare Hospital Lekki and the Healthy Hearing Clinical Director for Special Olympics Nigeria.',
     summary2: 'He is a trained Audiologist and Speech Language Pathologis with experience in advance diagnostics, hearing and balance disorders, speech therapy, rehabilitations, and hearing amplification technologies.',
   },
@@ -41,28 +33,28 @@ const doctorInfo = [
   {
     name: 'Dr Vina Kapoor',
     prof: 'AUDIOLOGIST',
-    image: '/images/gallery/Dr-Vina-Kapoor-1.jpg',
+    image: 'images/gallery/Dr-Vina-Kapoor-1.jpg',
     summary1: 'a Clinical Audiologist at Evercare Hospital Lekki and the Healthy Hearing Clinical Director for Special Olympics Nigeria.',
     summary2: 'He is a trained Audiologist and Speech Language Pathologist with experience in advance diagnostics, hearing and balance disorders, speech therapy, rehabilitations, and hearing amplification technologies.',
   },
   {
     name: 'Dr Paul Rony',
     prof: 'CRITICAL CARE',
-    image: '/images/gallery/Dr-Paul-Rony-b-cor.png',
+    image: 'images/gallery/Dr-Paul-Rony-b-cor.png',
     summary1: 'Dr Paul is an Intensivist with core specialty training in Critical Care and has more than 9 years of experience as an Intensive care doctor',
     summary2: 'Over the years, he has seen numerous surgical and medical cases and has handled a wide range of critical care issues including varying degrees of sepsis and is very knowledgeable in managing organ.',
   },
   {
     name: 'Dr Edward Jolayemi',
     prof: 'NEUROSURGEON',
-    image: '/images/gallery/Dr-Edward-Jolayemi-b-cor.png',
+    image: 'images/gallery/Dr-Edward-Jolayemi-b-cor.png',
     summary1: 'Dr. Edward Jolayemi is a Neurosurgeon with experience in a diverse range of brain and spine pathologies.',
     summary2: 'His competence spans the fields of neuro- trauma, neuro- oncology, paediatric neurosurgery, pituitary surgery, neurovascular and spine surgeries.',
   },
   {
     name: 'Dr Mirabel Nwosu',
     prof: 'CARDIOLOGIST',
-    image: '/images/gallery/Dr-Mirabel-Nwosu-1.jpg',
+    image: 'images/gallery/Dr-Mirabel-Nwosu-1.jpg',
     summary1: 'Dr. Mirabel Nwosu is a Consultant Cardiologist with valuable clinical cardiology experience including basic and advanced cardiac life support.',
     summary2: 'has completed her advanced fellowship training in interventional cardiology at Care Hospital, India during which time she performed.',
   },
@@ -70,11 +62,12 @@ const doctorInfo = [
   {
     name: 'Dr Basil Okoh',
     prof: 'CARDIOLOGIST',
-    image: '/images/gallery/Dr-Basil-Okoh-1.jpg',
+    image: 'images/gallery/Dr-Basil-Okoh-1.jpg',
     summary1: 'Dr Okoh Basil Ewere is a Consultant Physician and Cardiologist with additional interests in Basic life support(BLS) and Advanced cardiac life support ( ACLS).',
     summary2: 'In his quest to serve humanity, he took up appointment as a cardiologist to run a cardiology clinic with over 100 patients weekly and conducted over a thousand Echocardiographies.',
   },
 ];
+
 const doctorImage = document.querySelectorAll('.image');
 const Name = document.querySelectorAll('.name');
 const prof = document.querySelectorAll('.title');
