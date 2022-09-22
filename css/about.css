@@ -34,7 +34,8 @@ header {
   margin-right: 100px;
   color: white;
 }
-.first-header-content a{
+
+.first-header-content a {
   color: white;
 }
 
@@ -99,7 +100,6 @@ header {
   font-weight: bolder;
   color: white;
 }
-
 
 .hamburger {
   cursor: pointer;
@@ -252,7 +252,7 @@ footer {
 .page-links a {
   color: #d3d3d3d0;
   font-size: 16px;
-  line-height:30px;
+  line-height: 30px;
 }
 
 .form-container {
@@ -270,11 +270,13 @@ footer {
   font-size: 0.7em;
   color: rgba(255, 255, 255, 0.737);
 }
-.user-input{
-  display:flex;
+
+.user-input {
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .form-container input {
   width: 50vw;
   height: 5.3vh;
@@ -388,7 +390,6 @@ footer {
     background-color: #ec5242;
   }
 
-
   .heading-section h1 {
     width: 70vw;
     letter-spacing: 0.1em;
@@ -462,6 +463,7 @@ footer {
   .page-links h5 {
     border: none;
   }
+
   .form-container {
     width: 30vw;
     display: flex;

@@ -6,7 +6,7 @@ const main = document.querySelector('main');
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('active');
   menuItems.classList.toggle('show-menu');
-})
+});
 
 items.forEach((item) => {
   item.addEventListener('click', () => {
