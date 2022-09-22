@@ -1,0 +1,492 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  max-width: 768px;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-header-content {
+  background-color: #272a31;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 43px;
+  width: 100vw;
+}
+
+.first-header-content ul {
+  display: flex;
+  gap: 1em;
+  margin-right: 100px;
+  color: white;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  height: 50px;
+  width: 100vw;
+}
+
+.web-logo {
+  display: none;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  color: #272a31;
+  font-weight: bolder;
+  gap: 8px;
+  font-size: 1em;
+}
+
+.logo-image {
+  width: 40px;
+  height: 30px;
+}
+
+.nav-items {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 5px;
+  height: 206px;
+  background-color: black;
+  z-index: 1;
+}
+
+.nav-items li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 39px;
+}
+
+.nav-items li:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.nav-items a {
+  font-weight: bolder;
+  color: white;
+}
+
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  margin-left: 20px;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 4px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.heading-section {
+  width: 100vw;
+
+  /* height: 100vh; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/main_big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading-section > div {
+  position: relative;
+  top: 10vh;
+  margin-bottom: 120px;
+}
+
+.heading-section h1 {
+  color: #ec5242;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.heading-section p {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #565656;
+}
+
+.heading-section .inner-text {
+  background-color: white;
+  border: 3px solid ghostwhite;
+}
+
+.inner-container2 .first1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #565656;
+  margin-top: 0.5em;
+}
+
+.mail {
+  color: #272a31;
+  text-decoration: underline;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-section {
+  padding: 20px;
+  text-align: center;
+  color: #565656;
+}
+
+.heading p {
+  font-size: 20px;
+}
+
+.img1 {
+  background-image: url('../images/doctor-banner.jpg');
+}
+
+.ps-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90vw;
+  height: 50vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  width: 90vw;
+  background-color: #ec5342a3;
+}
+
+.img2 {
+  background-image: url('../images/depositphotos_75101721-stock-photo-group-of-doctors-team.jpg');
+}
+
+footer {
+  width: 100vw;
+  background-color: #272a31;
+  padding-top: 20px;
+  gap: 15px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-links {
+  text-align: center;
+}
+
+.page-links h5 {
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.page-links a {
+  color: #d3d3d3c2;
+  font-size: 13px;
+}
+
+.form-container {
+  width: 60vw;
+  gap: 17px;
+  margin: 24px auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container p {
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.737);
+}
+
+.form-container input {
+  width: 50vw;
+  height: 5.3vh;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+
+.form-container input::placeholder {
+  font-size: 12px;
+}
+
+.send-email-button {
+  margin-left: -10px;
+  font-weight: bolder;
+  padding: 0.35em 9px;
+  border: 1px solid #ec5242;
+  background: #ec5242;
+  color: white;
+}
+
+.social-icon {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.social-icon h5 {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icon ul {
+  display: flex;
+  color: rgba(240, 248, 255, 0.817) !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    position: relative;
+    max-width: 100vw;
+    height: 100vh;
+  }
+
+  .nav-container {
+    position: relative;
+    justify-content: space-around;
+    height: 80px;
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  .web-logo {
+    display: flex;
+  }
+
+  .nav-items {
+    position: relative;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+    gap: 80px;
+    height: 0;
+  }
+
+  .nav-items a {
+    color: #272a31;
+    font-weight: bolder;
+    font-size: 1em;
+    line-height: 0;
+  }
+
+  .nav-items li:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .nav-items .active {
+    color: #ec5242;
+  }
+
+  .consult-button {
+    color: #ec5242 !important;
+    padding: 1.2em 3em;
+    background-color: transparent;
+    border: 3px solid  #ec5242;
+    border-radius: 6px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-items a:hover {
+    color: #ec5242;
+    transform: color 150ms ease;
+  }
+
+  .consult-button:hover {
+    color: white !important;
+    background-color: #ec5242;
+  }
+
+
+  .heading-section h1 {
+    width: 70vw;
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  .heading-section p {
+    width: 55vw;
+  }
+
+  .heading-section .inner-text {
+    background-color: white;
+    border: 3px solid ghostwhite;
+  }
+
+  .mail {
+    color: #272a31;
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doctor-section {
+    padding: 20px;
+    text-align: center;
+    color: #565656;
+  }
+
+  .image-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .ps-img {
+    width: 45vw;
+    height: 50vh;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 45vw;
+    color: white;
+    background-color: #ec5342a3;
+  }
+
+  .img2 {
+    background-image: url('../images/depositphotos_75101721-stock-photo-group-of-doctors-team.jpg');
+  }
+
+  .doctor-section h3 {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  footer .inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .page-links h5 {
+    border: none;
+  }
+
+  .form-container {
+    width: 30vw;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-container input {
+    width: 25vw;
+    height: 5.2vh;
+  }
+
+  .send-email-button {
+    padding: 0.7em 9px;
+  }
+
+  .social-icon {
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+  }
+
+  .social-icon h5 {
+    width: 20vw;
+  }
+
+  .social-icon ul {
+    gap: 19px;
+  }
+}
