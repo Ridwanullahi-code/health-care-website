@@ -376,7 +376,7 @@ header {
     position: relative;
     display: flex;
     top: 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     padding: 0;
