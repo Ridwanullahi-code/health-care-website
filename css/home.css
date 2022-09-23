@@ -382,18 +382,19 @@ footer {
   color: white;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
   body {
     position: relative;
-    width:auto;
+    width: auto;
     height: 100vh;
   }
+
   .nav-container {
     max-width: auto;
     position: relative;
-    justify-content:center;
+    justify-content: center;
     height: 80px;
-    gap:50px;
+    gap: 50px;
     flex-direction: row;
   }
 
@@ -409,7 +410,7 @@ footer {
     align-items: center;
     background-color: white;
     padding: 0;
-    gap: 50px; 
+    gap: 50px;
     height: 0;
   }
 
