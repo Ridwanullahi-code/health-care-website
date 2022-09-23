@@ -376,11 +376,11 @@ header {
     position: relative;
     display: flex;
     top: 0;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: white;
     padding: 0;
-    gap: 50px;
+    gap: 80px;
     height: 0;
   }
 
