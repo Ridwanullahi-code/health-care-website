@@ -382,18 +382,18 @@ footer {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
   body {
     position: relative;
-    max-width: 100vw;
+    width:auto;
     height: 100vh;
   }
-
   .nav-container {
+    max-width: auto;
     position: relative;
-    justify-content: space-around;
+    justify-content:center;
     height: 80px;
-    width: 100vw;
+    gap:50px;
     flex-direction: row;
   }
 
@@ -409,7 +409,7 @@ footer {
     align-items: center;
     background-color: white;
     padding: 0;
-    gap: 80px;
+    gap: 50px; 
     height: 0;
   }
 
@@ -473,7 +473,7 @@ footer {
   }
 
   .main-program [class*='box'] {
-    width: 30vh;
+    width: 20vh;
     height: 30vh;
     display: flex;
     flex-direction: column;
