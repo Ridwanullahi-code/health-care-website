@@ -130,8 +130,6 @@ header {
 
 .heading-section {
   width: 100vw;
-
-  /* height: 100vh; */
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -227,98 +225,32 @@ header {
   background-image: url('/images/depositphotos_75101721-stock-photo-group-of-doctors-team.jpg');
 }
 
-footer {
+.footer {
+  background: #414246;
   width: 100vw;
-  background-color: #272a31;
-  padding: 40px 0;
-  gap: 15px;
-}
-
-.inner-container {
+  height: 20vh;
+  padding: 40px;
   display: flex;
-  flex-direction: column;
-}
-
-.page-links {
-  text-align: center;
-}
-
-.page-links h5 {
+  justify-content: space-around;
+  line-height: 17px;
   color: white;
-  font-size: 20px;
-  border-bottom: 1px solid grey;
 }
 
-.page-links a {
-  color: #d3d3d3d0;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.form-container {
-  width: 60vw;
-  gap: 17px;
-  margin: 24px auto;
+.footer .logo-image {
   display: flex;
-  text-align: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form-container p {
-  font-size: 0.7em;
-  color: rgba(255, 255, 255, 0.737);
-}
-
-.user-input {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
-.form-container input {
-  width: 50vw;
-  height: 5.3vh;
-  border-radius: 2px;
-  outline: none;
-  border: none;
+.footer img {
+  width: 50px;
 }
 
-.form-container input::placeholder {
+.footer .foot-note {
   font-size: 12px;
 }
 
-.send-email-button {
-  font-weight: bolder;
-  padding: 0.35em 5px;
-  border: 1px solid #ec5242;
-  background: #ec5242;
-  color: white;
-}
-
-.social-icon {
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  gap: 5px;
-  text-align: center;
-}
-
-.social-icon h5 {
-  color: white;
-  font-size: 20px;
-}
-
-.social-icon ul {
-  display: flex;
-  color: rgba(240, 248, 255, 0.817) !important;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-icon a {
+.foot-note a {
   color: white;
 }
 
@@ -378,6 +310,10 @@ footer {
 
   .hamburger {
     display: none;
+  }
+
+  .footer a {
+    color: #ec5242;
   }
 
   .nav-items a:hover {
@@ -454,47 +390,23 @@ footer {
     font-size: 30px;
   }
 
-  footer .inner-container {
+  .footer {
+    background: #414246;
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    padding: 40px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-  }
-
-  .page-links h5 {
-    border: none;
-  }
-
-  .form-container {
-    width: 30vw;
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .form-container input {
-    width: 25vw;
-    height: 5.2vh;
-  }
-
-  .send-email-button {
-    padding: 0.7em 9px;
-  }
-
-  .social-icon {
-    width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: -55px;
+    line-height: 17px;
   }
 
-  .social-icon h5 {
-    width: 20vw;
+  .logo-image {
+    display: flex;
   }
 
-  .social-icon ul {
-    gap: 19px;
+  .footer .foot-note {
+    font-size: 12px;
   }
 }

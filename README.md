@@ -27,6 +27,10 @@ To make use of this project run below on any command prompt to have it on your l
 or
 ```git@github.com:Ridwanullahi-code/health-care-website.git
 ```
+
+## Acknowledgement 
+ This project is premised and inspired by [Cindy Shin](https://www.behance.net/adagio07), who is the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+ 
 ## **Show your support**
 
 Give a ⭐️ if you like this project!
@@ -43,6 +47,8 @@ I'm a data scientist and full stack developer
 ## Acknowledgements
 
  - [Awesome Readme Templates](https://github.com/microverseinc/readme-template/blob/master/README.md#project-name)
+
+ -  
  
 ## License
 
